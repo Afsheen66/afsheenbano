@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order Now - QuickBite</title>
+  <link rel="stylesheet" href="order.css" />
+</head>
+<body>
+
+
+  <nav id="navbar">
+    <div id="logo">
+      <img src="logo.png" alt="QuickBite" />
+    </div>
+    <ul>
+      <li><a href="index.html">← Back to Home</a></li>
+    </ul>
+  </nav>
+
+ 
+  <section id="order">
+    <h1 class="h-primary">Place Your Order</h1>
+    <form id="order-form" onsubmit="return handleOrder(event)">
+      <input type="text" placeholder="Full Name" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <input type="text" placeholder="Delivery Address" required />
+      <textarea placeholder="List your dishes or any instructions..." required></textarea>
+      <button type="submit">Submit Order</button>
+      <p id="order-message" class="success-message"></p>
+    </form>
+    <a href="index.html" class="back-btn">← Back</a>
+  </section>
+
+  
+  <footer id="footer">
+    <p>&copy; 2025 QuickBite | All rights reserved.</p>
+  </footer>
+
+
+  <script>
+    function handleOrder(event) {
+      event.preventDefault();
+      document.getElementById("order-message").textContent = "✅ Order placed successfully! Thank you for choosing QuickBite.";
+      return false;
+    }
+  </script>
+
+</body>
+</html>

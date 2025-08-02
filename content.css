@@ -1,0 +1,130 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: url('download.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+/* Navbar */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  z-index: 1000;
+}
+
+#logo img {
+  height: 50px;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#navbar ul li a:hover {
+  background-color: #ff5722;
+}
+
+
+#contact-us {
+  padding: 120px 20px 60px;
+  text-align: center;
+}
+
+.h-primary {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.contact-box {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 30px;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.contact-box p {
+  color: #ddd;
+  margin-bottom: 15px;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 25px;
+  border: 2px solid #ff5722;
+  border-radius: 25px;
+  color: #ff5722;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #ff5722;
+  color: #fff;
+}
+
+
+#footer {
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #ccc;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+
+@media (max-width: 600px) {
+  .h-primary {
+    font-size: 2rem;
+  }
+
+  .contact-box {
+    width: 90%;
+    padding: 20px;
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+
+  #navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
